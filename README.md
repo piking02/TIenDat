@@ -1,8 +1,10 @@
-# Dingtalk::Robot
+# Dingtalk Robot
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/dingtalk/robot`. To experiment with that code, run `bin/console` for an interactive prompt.
+A simple wrapper for [Dingtalk Group Robot](https://open-doc.dingtalk.com/microapp/serverapi2/qf2nxq).
 
-TODO: Delete this and the text above, and describe your gem
+[![Gem Version](https://badge.fury.io/rb/dingtalk-robot.svg)](https://rubygems.org/gems/dingtalk-robot)
+[![Build Status](https://travis-ci.org/pinewong/dingtalk-robot.svg)](https://travis-ci.org/pinewong/dingtalk-robot)
+[![Test Coverage](https://codecov.io/github/pinewong/dingtalk-robot/coverage.svg?branch=master)](https://codecov.io/github/pinewong/dingtalk-robot?branch=master)
 
 ## Installation
 
@@ -14,11 +16,16 @@ gem 'dingtalk-robot'
 
 And then execute:
 
-    $ bundle
+
+```shell
+$ bundle
+```
 
 Or install it yourself as:
 
-    $ gem install dingtalk-robot
+```shell
+$ gem install dingtalk-robot
+```
 
 ## Usage
 
@@ -32,8 +39,8 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/dingtalk-robot. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/pinewong/dingtalk-robot. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Code of Conduct
 
-Everyone interacting in the Dingtalk::Robot project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/dingtalk-robot/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the Dingtalk::Robot project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/pinewong/dingtalk-robot/blob/master/CODE_OF_CONDUCT.md).
