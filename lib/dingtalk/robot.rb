@@ -17,16 +17,13 @@ module Dingtalk
     # @param channel      [#to_sym] Set both api token and message template
     # @param message_type [#to_sym] (:text) Message type
     # @example
-    #   # Config api token and message template
+    #   # Config api token and message template directory
     #   Dingtalk::Robot.config.tokens       = { order: 'WEBHOOK...' }
     #   Dingtalk::Robot.config.template_dir = '.'
-    #   system <<-COMMAND
-    #     echo 'hello, <%= @name %>' > order.text.erb
-    #   COMMAND
+    #   system %q(echo 'hello, <%= @name %>' > order.text.erb)
+    #
     #   # Notify message
-    #   robot = Dingtalk::Robot.new(:order) do
-    #     @name = 'Pine Wong'
-    #   end
+    #   robot = Dingtalk::Robot.new(:order) { @name = 'Pine Wong' }
     #   robot.notify
     def initialize(channel, message_type = nil, &context_block)
       @channel = channel.to_sym

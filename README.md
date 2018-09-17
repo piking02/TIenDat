@@ -29,7 +29,20 @@ $ gem install dingtalk-robot
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+# Config api token and message template directory
+Dingtalk::Robot.config.tokens       = { order: 'WEBHOOK...' }
+Dingtalk::Robot.config.template_dir = '.'
+system %q(echo 'hello, <%= @name %>' > order.text.erb)
+
+# Notify message
+robot = Dingtalk::Robot.new(:order) { @name = 'Pine Wong' }
+robot.notify
+```
+
+## Help and Docs
+
+* [RDoc](https://www.rubydoc.info/github/pinewong/dingtalk-robot)
 
 ## Development
 
