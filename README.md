@@ -6,6 +6,14 @@ A simple wrapper for [Dingtalk Group Robot](https://open-doc.dingtalk.com/microa
 [![Build Status](https://travis-ci.org/pinewong/dingtalk-robot.svg)](https://travis-ci.org/pinewong/dingtalk-robot)
 [![Test Coverage](https://codecov.io/github/pinewong/dingtalk-robot/coverage.svg?branch=master)](https://codecov.io/github/pinewong/dingtalk-robot?branch=master)
 
+## Supported Type
+
+- [x] Text
+- [x] Markdown
+- [x] ActionCard
+- [x] FeedCard
+- [ ] Link
+
 ## Installation
 
 Add this line to your application's Gemfile:
