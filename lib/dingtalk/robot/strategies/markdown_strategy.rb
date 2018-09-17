@@ -9,7 +9,7 @@ module Dingtalk
         @message = message
       end
 
-      # @option options [String]        :title      (required)
+      # @option options [String]        :title
       # @option options [Array<String>] :at_mobiles
       # @option options [Boolean]       :is_at_all
       def notify(**options)

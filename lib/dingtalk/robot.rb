@@ -6,6 +6,7 @@ require 'dingtalk/robot/configurable'
 require 'dingtalk/robot/errors'
 require 'dingtalk/robot/strategies/text_strategy'
 require 'dingtalk/robot/strategies/markdown_strategy'
+require 'dingtalk/robot/strategies/action_card_strategy'
 
 module Dingtalk
   # DingTalk Group Robot
@@ -44,7 +45,7 @@ module Dingtalk
           raise ArgumentError, "Undefined channel template, channel: #{channel}, template_dir: #{config.template_dir}"
         end
         types = template_paths.map do |template_path|
-          template_path[%r{#{config.template_dir}/#{channel}.([a-zA-Z]+).erb}, 1].to_sym
+          template_path[%r{#{config.template_dir}/#{channel}.([a-z_]+).erb}, 1].to_sym
         end
         types.include?(config.message_type) ? config.message_type : types.first
       end
