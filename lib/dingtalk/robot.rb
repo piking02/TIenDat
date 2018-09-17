@@ -7,6 +7,7 @@ require 'dingtalk/robot/errors'
 require 'dingtalk/robot/strategies/text_strategy'
 require 'dingtalk/robot/strategies/markdown_strategy'
 require 'dingtalk/robot/strategies/action_card_strategy'
+require 'dingtalk/robot/strategies/feed_card_strategy'
 
 module Dingtalk
   # DingTalk Group Robot
